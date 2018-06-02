@@ -1,1 +1,221 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|VT323|Oswald');
+
+body
+{
+  background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/retina_wood.png");
+}
+.inline
+{
+  display: inline-block;
+}
+button:hover
+{
+  cursor: pointer;
+}
+/******************************************************************************/
+div.main-block
+{
+  width: 500px;
+  height: 500px;
+  margin: 1em auto;
+}
+div.game-board
+{
+  background-color: #333333;
+  width: 90%;
+  height: 90%;
+  margin: 5% auto;
+  border:#333333 solid 25px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 5px 50px 10px black;
+}
+div.buttons-holder
+{
+  width: 100%;
+  height: 50%;
+}
+/******************************************************************************/
+div.tune-button
+{
+  width: 49%;
+  height: 99%;
+}
+div.green
+{
+  background-color:#00a74a;
+  border-radius: 100% 0 0 0;
+}
+div.red
+{
+  background-color:#9f0f17;
+  border-radius: 0 100% 0 0;
+}
+div.yellow
+{
+  background-color: #cca707;
+  border-radius: 0 0 0 100%;
+}
+div.blue
+{
+  background-color: #094a8f;
+  border-radius: 0 0 100% 0;
+}
+/******************************************************************************/
+div.controls-board
+{
+  width: 51%;
+  height: 51%;
+  position: absolute;
+  top:22%;
+  left: 22%;
+  border:#333333 solid 12px;
+  border-radius: 50%;
+  background-color: white;
+}
+h1.board-name
+{
+  text-align: center;
+  font-size: 3em;
+  color: #333333;
+  font-weight: normal;
+  margin-top: .8em;
+  margin-bottom: 0;
+  font-family: 'Alfa Slab One';
+}
+h1.board-name span
+{
+  font-size: .4em;
+  vertical-align: super;
+}
+div.up-controls,
+div.on-off-box
+{
+  font-family: 'Oswald';
+  font-size: .8em;
+  color: #333333;
+}
+div.up-controls button
+{
+  display: block;
+}
+div.up-controls label
+{
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.1em;
+}
+div.count-box
+{
+  width: 40%;
+  display: inline-block;
+  margin-left: 10px;
+}
+div.start-box
+{
+  width: 22%;
+  display: inline-block;
+}
+div.strict-box
+{
+  width: 22%;
+  display: inline-block;
+}
+div.count-screen
+{
+  border: solid #333333 4px;
+  border-radius: 10px;
+  width: 60%;
+  height: 35px;
+  margin:auto;
+  background-color: #32050c;
+  font-family: 'VT323';
+  font-size: 2.5em;
+  text-align: center;
+  color: #dc0d29;
+}
+div.count-box label
+{
+  margin-top: 4px;
+}
+.round-button
+{
+  border: solid #333333 4px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  box-shadow: 0px 2px 5px 0 black;
+  position: relative;
+}
+.round-button:active
+{
+  top: 2px;
+  box-shadow: none;
+}
+button.red
+{
+  background-color: #fc0102;
+}
+button.yellow
+{
+  background-color: #ffff00;
+}
+button.red:focus,
+button.yellow:focus
+{
+  outline: none;
+}
+.on-led
+{
+  background-color: #dc0d29;
+}
+.off-led
+{
+  background-color: black;
+}
+div.strict-led
+{
+  width: 7px;
+  height: 7px;
+  margin: 0 auto .5em auto;
+  border: #333333 2px solid;
+  border-radius: 50%;
+}
+div.on-off-box
+{
+  width: 35%;
+  height: 18px;
+  margin: 1.5em auto 0 auto;
+}
+div.on-off-switch
+{
+  width: 45%;
+  height: 100%;
+  display: inline-block;
+  background-color: #333333;
+  border-radius: 2px;
+}
+div.on-off-switch button
+{
+  border: #333333 solid 1px;
+  border-radius: 2px;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-color: #3193de;
+  color: rgba(255,255,255,0);
+}
+.switch-on
+{
+  left: 50%;
+}
+.switch-off
+{
+  left: 0;
+}
+div.on-off-switch button:focus
+{
+  outline: none;
+}
