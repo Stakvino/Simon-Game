@@ -40,6 +40,20 @@ div.tune-button
 {
   width: 49%;
   height: 99%;
+  position: relative;
+  z-index: 0;
+}
+div.activated:hover
+{
+  cursor: pointer;
+}
+div.activated:active
+{
+  filter: brightness(150%);
+}
+.bright
+{
+  filter: brightness(150%);
 }
 div.green
 {
@@ -72,10 +86,13 @@ div.controls-board
   border:#333333 solid 12px;
   border-radius: 50%;
   background-color: white;
+  z-index: 1;
 }
-h1.board-name
+label.board-name
 {
+  display: inline-block;
   text-align: center;
+  width: 100%;
   font-size: 3em;
   color: #333333;
   font-weight: normal;
@@ -83,7 +100,7 @@ h1.board-name
   margin-bottom: 0;
   font-family: 'Alfa Slab One';
 }
-h1.board-name span
+label.board-name span
 {
   font-size: .4em;
   vertical-align: super;
@@ -101,7 +118,7 @@ div.up-controls button
 }
 div.up-controls label
 {
-  display: block;
+  display: inline-block;
   text-align: center;
   width: 100%;
   margin-top: 1.1em;
@@ -135,9 +152,14 @@ div.count-screen
   text-align: center;
   color: #dc0d29;
 }
+
 div.count-box label
 {
   margin-top: 4px;
+}
+div.count-screen label
+{
+  margin-top: 0;
 }
 .round-button
 {
@@ -196,6 +218,10 @@ div.on-off-switch
   display: inline-block;
   background-color: #333333;
   border-radius: 2px;
+}
+div.on-off-switch:hover
+{
+  cursor: pointer;
 }
 div.on-off-switch button
 {

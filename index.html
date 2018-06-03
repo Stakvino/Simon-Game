@@ -15,14 +15,19 @@
 
   <div class="game-board">
 
+    <audio src=" https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+    <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+    <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+    <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+
     <div class="controls-board">
 
-      <h1 class="board-name">Simon<span>&reg;</span></h1>
+      <label class="board-name">Simon<span>&reg;</span></label>
 
       <div class="up-controls">
 
         <div class="count-box">
-          <div class="count-screen"></div>
+          <div class="count-screen"><label></label></div>
           <label>COUNT</label>
         </div>
 
@@ -41,7 +46,7 @@
 
       <div class="on-off-box">
         <label>OFF</label>
-        <div class="on-off-switch"> <button type="button" class="switch-off">ON</button> </div>
+        <div class="on-off-switch"> <button type="button" class="switch-off">⏻</button> </div>
         <label>ON</label>
       </div>
 
@@ -60,7 +65,10 @@
   </div>
 </div>
 
-<script src="js/script.js"></script>
+
+<script src="js/board.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
